@@ -15,15 +15,32 @@
 
 ▶️ Commands to Run This Project
 
-🖥️ 1. Run Django development server
+🧠 The `bash` after the first three backticks tells Markdown to use syntax highlighting for shell commands.
+
+It will render like this on GitHub:
+
+> ### Run Django Server  
+> ```bash
+> python manage.py runserver
+> ```
+
+---
+
+### 🧱 **2️⃣ Multiple Commands in One Block**
+
+
+### Run All Project Commands
+```bash
+# 1. Run Django server
 python manage.py runserver
 
-⚙️ 2. Start Celery worker
+# 2. Start Celery Worker
 celery -A news worker -l info --pool=solo
 
-⏰ 3. Start Celery Beat (Scheduler)
+# 3. Start Celery Beat Scheduler
 celery -A news beat -l info
 
+```
 Now your project will:
 
 Fetch latest news from NewsAPI every hour
