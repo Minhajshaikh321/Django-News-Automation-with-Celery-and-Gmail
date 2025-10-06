@@ -12,24 +12,7 @@
 
 ✅ Works asynchronously — no delays in your web app
 
-
-▶️ Commands to Run This Project
-
-🧠 The `bash` after the first three backticks tells Markdown to use syntax highlighting for shell commands.
-
-It will render like this on GitHub:
-
-> ### Run Django Server  
-> ```bash
-> python manage.py runserver
-> ```
-
----
-
-### 🧱 **2️⃣ Multiple Commands in One Block**
-
-
-### Run All Project Commands
+### Commands to Run This Project
 ```bash
 # 1. Run Django server
 python manage.py runserver
@@ -43,8 +26,8 @@ celery -A news beat -l info
 ```
 Now your project will:
 
-Fetch latest news from NewsAPI every hour
+1-Fetch latest news from NewsAPI every hour
 
-Save it to your database
+2-Save it to your database
 
-Send the news to recipients via Gmail
+3-Send the news to recipients via Gmail
